@@ -39,11 +39,13 @@ And then import the JavaScript file as well:
 You can now easily add slideshows in your web pages. To avoid writing all the
 boilerplate needed by Nivo Slider, you can rely on the `nivo_slider` tag:
 
-~~~erb
-<%= nivo_slider, id: "slider" do %>
-  <%= image_tag "foo.png", title: "A very nice photo!" %>
-  <%= image_tag "bar.png" %>
-<% end %>
+~~~html.erb
+<div class="theme-default">
+	<%= nivo_slider id: "slider" do %>
+  		<%= image_tag "foo.png", title: "A very nice photo!" %>
+  		<%= image_tag "bar.png" %>
+	<% end %>
+</div>
 ~~~
 
 This helper behaves like Action View's `content_tag` helper apart from the fact that
